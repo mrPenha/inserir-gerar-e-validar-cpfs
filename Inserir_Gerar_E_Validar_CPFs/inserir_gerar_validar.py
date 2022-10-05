@@ -9,6 +9,7 @@ while True:
     print('Opções: \n\n1 - Inserir CPF \n2 - Gerar CPFs aleatórios \n3 - Validar CPF \n4 - Imprimir lista de CPFs \n5 - Sair \n--------------------------')
     op = int(input('> '))
 
+    #  inserir cpfs
     if op == 1:
         os.system('clear')
 
@@ -33,6 +34,7 @@ while True:
             cpf.clear()
             os.system('clear')
 
+    #  gerar cpfs aleatórios
     elif op == 2:
         os.system('clear')
 
@@ -53,6 +55,7 @@ while True:
         input('Aperte ENTER para sair...')
         os.system('clear')
 
+    #  validar cpfs
     elif op == 3:
         os.system('clear')
         n = input('Digite seu CPF: ')
@@ -76,6 +79,7 @@ while True:
         input('Aperte ENTER para sair...')
         os.system('clear')
 
+    #  imprimir lista de cpfs já criados/gerados
     elif op == 4:
         os.system('clear')
         print('QTDE |   CPF')
@@ -92,11 +96,13 @@ while True:
         input('\nAperte ENTER para sair...')
         os.system('clear')
 
+    #  finaliza programa
     elif op == 5:
         os.system('clear')
         print('FIM \n')
         break
 
+    #  se nenhuma das opções estiverem corretas
     else:
         os.system('clear')
         print('Opção Inválida \n')
